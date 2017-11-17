@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-    <EditText
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="40dp"
@@ -12,13 +12,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Reset"
+        android:text="Close"
         android:textSize="40dp"
-        local:MvxBind="Click ResetTextCommand" />
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Show Second View"
-        android:textSize="40dp"
-        local:MvxBind="Click ShowSecondViewCommand" />
+        local:MvxBind="Click CloseCommand" />
 </LinearLayout>

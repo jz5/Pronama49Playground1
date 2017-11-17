@@ -1,5 +1,5 @@
 <views:MvxWpfView 
-             x:Class="Playground1.Wpf.Views.MainView"
+             x:Class="Playground1.Wpf.Views.SecondView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -9,9 +9,8 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <StackPanel>
-            <TextBox Text="{Binding Text, Mode=TwoWay}" FontSize="36" />
-            <Button Content="Reset" Command="{Binding ResetTextCommand }" FontSize="36" />
-            <Button Content="Show Second View" Command="{Binding ShowSecondViewCommand }" FontSize="36" />
+            <Label Content="{Binding Text}" FontSize="36" />
+            <Button Content="Close" Command="{Binding CloseCommand }" FontSize="36" />
         </StackPanel>
     </Grid>
 </views:MvxWpfView>

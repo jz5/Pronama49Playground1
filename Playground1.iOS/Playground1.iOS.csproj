@@ -87,6 +87,10 @@
     <Compile Include="DebugTrace.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="Views\SecondView.cs" />
+    <Compile Include="Views\SecondView.designer.cs">
+      <DependentUpon>SecondView.cs</DependentUpon>
+    </Compile>
     <None Include="AppDelegate.cs.old" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\MainView.cs" />
@@ -100,6 +104,7 @@
     <Content Include="Entitlements.plist" />
     <None Include="packages.config" />
     <InterfaceDefinition Include="Views\MainView.xib" />
+    <InterfaceDefinition Include="Views\SecondView.xib" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Binding, Version=5.4.2.0, Culture=neutral, processorArchitecture=MSIL">

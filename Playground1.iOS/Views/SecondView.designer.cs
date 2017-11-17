@@ -7,12 +7,11 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
-using UIKit;
 
 namespace Playground1.iOS.Views
 {
-    [Register ("MainView")]
-    partial class MainView
+    [Register ("SecondView")]
+    partial class SecondView
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -20,11 +19,7 @@ namespace Playground1.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton ShowSecondViewButton { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField TextField { get; set; }
+        UIKit.UILabel Label { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
@@ -33,14 +28,9 @@ namespace Playground1.iOS.Views
                 Button = null;
             }
 
-            if (ShowSecondViewButton != null) {
-                ShowSecondViewButton.Dispose ();
-                ShowSecondViewButton = null;
-            }
-
-            if (TextField != null) {
-                TextField.Dispose ();
-                TextField = null;
+            if (Label != null) {
+                Label.Dispose ();
+                Label = null;
             }
         }
     }
